@@ -1,0 +1,51 @@
+.home-grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: auto auto;
+  column-gap: 1.5rem;
+  row-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home-aside {
+  grid-row-start: 1;
+  grid-row-end: 3 ;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 720px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
+   >ul {
+     list-style: none;
+   }
+}
+.home-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
+}
+.companies {
+  margin-bottom: 2rem;
+  display: flex;
+  overflow-x: scroll;
+  a {
+  }
+  img {
+    max-height: 4rem;
+  }
+  > div {
+    margin-right: 1rem;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 0 18px;
+  }
+
+}
