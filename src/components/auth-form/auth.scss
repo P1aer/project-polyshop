@@ -1,16 +1,63 @@
 .auth-wrapper {
   z-index: 1002;
   background-color: rgba(0,0,0,0.3);
-  position: absolute;
+  position: fixed;
+  width: 100%;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   > form {
+    .chosen {
+      color: black;
+    }
+    &:invalid {
+      .form-btn {
+        opacity: .5;
+      }
+    }
+    .form-btn {
+      width: 60%;
+      opacity: 1;
+      font-size: 1.5rem;
+      background-color: #38b349;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 24px;
+      color: white;
+      margin: 2rem 0;
+      cursor: pointer;
+    }
+    span {
+      cursor: pointer;
+    }
+    input {
+      box-sizing: border-box;
+      width: 60%;
+      margin-bottom: 1.5rem;
+      font-size: 1.75rem;
+      padding-right: 25px;
+      padding-bottom: 5px;
+      border-radius: 0;
+      background-color: initial;
+      outline: none;
+      filter: none;
+      border: none;
+      border-bottom: 1px solid #dfdfe1;
+      -webkit-text-fill-color: inherit;
+      -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    }
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     max-width: 600px;
     padding: 20px;
     margin: 10% auto;
     background: white;
     border-radius: 8px;
+    h1 {
+      color:#dfdfe1;
+      margin-bottom: 3rem;
+    }
   }
 }

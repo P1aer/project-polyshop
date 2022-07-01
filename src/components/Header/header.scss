@@ -25,29 +25,48 @@
  }
 }
 
+.suggestion {
+ display:flex;
+ flex-direction: column;
+ margin-top: 1rem;
+ padding: 0 1rem;
+ a {
+  margin-bottom: 0.3rem;
+  padding: 5px;
+ }
+}
 .search-out {
  box-sizing: border-box;
  display: inline-block;
  height: 64px;
  padding: 12px 20px;
  width: 65%;
+
  .search-in {
   background: #f2f2f2;
   border-radius: 8px;
   font-size: 14px;
-  height: 40px;
   line-height: 40px;
   position: relative;
   transition: background .3s;
-  &:hover {
+
+  &:hover,:focus, /*input:hover,input:focus*/ {
    background-color: #fff;
    border-radius: 8px;
    box-shadow: 0 4px 12px 0 rgb(0 0 0 /20%);
+   >input {
+    background: white;
+   }
+/*   .suggestion {
+    display: flex;
+   }*/
+  }
   }
   .search-icon {
    position: absolute;
-   top: 22%;
+   top: 8px;
    right: 2.5%;
+   cursor: pointer;
    max-height: 1.5rem;
   }
   input {
@@ -61,10 +80,6 @@
    padding: 0 80px 0 12px;
    transition: background .3s;
    width: 100%;
-   &:hover,:focus {
-    background: white;
-   }
-  }
  }
 }
 

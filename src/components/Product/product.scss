@@ -1,0 +1,131 @@
+.loader-cont {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 11rem;
+  flex-direction: column;
+  position: relative;
+   p {
+     position: absolute;
+     bottom: 5%;
+   }
+}
+.jumping-dots span {
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 0px;
+  animation: jump 2s infinite;
+}
+.jumping-dots .dot-1{
+  animation-delay: 200ms;
+}
+.jumping-dots .dot-2{
+  animation-delay: 400ms;
+}
+.jumping-dots .dot-3{
+  animation-delay: 600ms;
+}
+
+@keyframes jump {
+  0%   {bottom: 0px;}
+  20%  {bottom: 5px;}
+  40%  {bottom: 0px;}
+}
+.auth-btn {
+  font-size: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+.product-name {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.product-desc {
+  margin-bottom: 1rem;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  border-radius:4px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
+}
+.mini-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+.product-info {
+  margin-bottom: 2rem;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
+  box-sizing: border-box;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.product-main {
+  margin-bottom: 1rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius:4px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
+
+  >img {
+    width: 500px;
+    height: 500px;
+  }
+  >div {
+    width: 50%;
+  }
+  .main-head {
+    margin-bottom: 1rem;
+    span {
+      font-weight: lighter;
+    }
+  }
+  h2 {
+    font-size: 36px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 48px;
+    span {
+      color: #b4b2b5;
+    }
+  }
+}
+.cart-btn {
+  border: none;
+  background-color: #38b349;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 1.5rem;
+}
+.info-cat,.info-key {
+  font-size: 1.5rem;
+}
+.info-cont {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
