@@ -40,7 +40,6 @@ function AuthForm( {open, visible, setVisible} ) {
     }
     return (<>
         {
-            ///НУЖНО ДЛЯ СОХРАНЕНИЯ СОСТОЯНИЯ ФОРМЫ
             visible && !isAuth && (<div className="auth-wrapper" onMouseDown={() => open(false)}>
             <form onSubmit={onSubmit} onMouseDown={(e) => e.stopPropagation()}>
                 <h1>

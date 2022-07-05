@@ -20,7 +20,6 @@ function App() {
 
   return (
     <div className="App">
-       {/* убрать если не нужно сохранять состояние формы*/}
         <AuthForm open={setAuthOpen} visible={authOpen} setVisible={setAuthOpen}/>
       <Header authOpen={setAuthOpen}/>
       <div className="wrapper">

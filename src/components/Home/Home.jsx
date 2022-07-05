@@ -1,7 +1,6 @@
 import "./home.scss"
 import React from "react";
 import {Link} from "react-router-dom";
-import axios from "../../axios"
 import { useDispatch, useSelector } from "react-redux"
 import {fetchCategories, fetchCompanies, fetchProducts} from "../../redux/slices/productSlice";
 const sortDesc = (a,b) => {
